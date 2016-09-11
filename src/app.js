@@ -23,7 +23,7 @@ const getAvailibility = async () => {
   let contact = false
   const resp = await fetch('https://reserve.cdn-apple.com/US/en_US/reserve/iPhone/availability.json')
   const respJson = await resp.json()
-  const stores = { // THIS IS THERE YOU PUT THE LIST OF STORES YOU WANT CHECKED. USE THE PRODUCT-OFFERING.JSON TO FIND THE STORE IDS
+  const stores = { // THIS IS THERE YOU PUT THE LIST OF STORES YOU WANT CHECKED. USE THE STORES.JSON TO FIND THE STORE IDS
     Carlsbad: 'R294',
     'North County': 'R285',
     UTC: 'R082',
